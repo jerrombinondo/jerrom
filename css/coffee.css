@@ -1,0 +1,124 @@
+/* Navigation bar */
+header {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  margin-top: 30px;
+  left: 200px;
+  right: 10px;
+  box-shadow: 4px 14px 28px rgba(8, 0, 0, 0.5);
+}
+
+ul {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 10px 10px 50px black;
+}
+
+li a:hover {
+  background-color: rgb(143, 0, 0);
+}
+
+/* Body */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.coffee .box-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-left: 6rem;
+  margin-top: 100px;
+}
+
+.coffee .box-container .box {
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.coffee .box-container .content {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 500;
+  background: rgb(240, 236, 236);
+  justify-content: center;
+  color: black;
+}
+
+.coffee .box-container .box .images {
+  position: static;
+  text-align: center;
+  overflow: hidden;
+  margin: 0.5rem;
+  padding: 10px;
+  height: 40vh;
+  width: 40vh;
+}
+
+img {
+  padding: 10px;
+  margin: 20px;
+  width: 30vh;
+  height: 30vh;
+  background-color: transparent;
+}
+
+.box-container {
+  margin: 10px;
+}
+
+div .content a {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.coffee .box-container:hover .overlay {
+  opacity: 1;
+}
